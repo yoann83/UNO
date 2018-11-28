@@ -1,5 +1,6 @@
 ### Jeu du Uno
 Réalisation d'un projet en groupe de la formation 3WAcademy.
+Visualistion du projet sur http://yoannmartinez.fr/#portfolio
 
 ## technologie et fichiers
 Ce jeu est développé entièrement en programmation objet. En javascript avec Ecma Script 6 et jQuery.
