@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="datas.js"></script>
+    <script src="classes/Cards.class.js"></script>
+    <script src="classes/Regular.class.js"></script>
+    <script src="classes/Special.class.js"></script>
+    <script src="classes/Joker.class.js"></script>
+    <script src="classes/CardManager.class.js"></script>
+    <script src="classes/Player.class.js"></script>
+    <script src="classes/Display.class.js"></script>
+    <script src="classes/Game.class.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Le jeu du UNO</h1>
+        <nav>
+            <button id="sortCards" class="sortCards">Sort Cards</button>
+            <input class="sortCards" onclick='window.location.reload(false)' type="button" value="New Game" id="refresh" />
+            <p id="player_infos"></p>
+            <p id="message" class="hidden"></p>
+            <p id="infos" class="hidden"></p>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <ul id="discard"></ul>
+                <div id="pile">
+                    <div class="card backward" data-pile="true"></div>
+                </div>
+                <div id="player_deck"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container_footer">
+            <p>Joueurs</p>
+            <div id="players_infos"></div>
+        </div>
+    </footer>
+    <div id="modal" class="hidden"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
